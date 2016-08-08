@@ -4,16 +4,24 @@
 #include <stdio.h>
 
 int main(){
-	int numero;
+	int number;
+
 	printf("Ingrese un numero: ");
-	if (scanf("%d", &numero) != 1){
+	if (scanf("%d", &number) != 1){
 		printf("Numero invalido\n");
 		return 1;
 	}
-	if (numero%2 == 0){
-		printf("El numero %d es par.\n", numero);
+	if (isPair(number) == 1){
+		printf("El numero %d es par.\n", number);
 	}else{
-		printf("El numero %d es impar.\n", numero);
+		printf("El numero %d es impar.\n", number);
+	}
+	return 0;
+}
+
+int isPair(int number){
+	if (number%2 == 0){
+		return 1;
 	}
 	return 0;
 }
