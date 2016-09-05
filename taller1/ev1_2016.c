@@ -73,7 +73,7 @@ void registerEmployees(char (*names)[MAX_CHARS_NAME], float *salaries, int *hour
     scanf("%d", &n);
     
     if (*empl_count + n > empl_max) {
-        printf("El número de empreados a registrar sobrepasa la memoria.");
+        printf("El número de empreados a registrar sobrepasa la memoria.\n");
         return;
     }
     
